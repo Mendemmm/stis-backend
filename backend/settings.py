@@ -22,7 +22,7 @@ environ.Env.read_env(os.path.join(BASE_DIR, '.env'))
 # ---------------------------------------------
 SECRET_KEY = env('SECRET_KEY', default='fallback-secret-key-for-local-only')  # NEVER commit your real key
 DEBUG = env('DEBUG', default=False)
-ALLOWED_HOSTS = env.list('ALLOWED_HOSTS', default=['backend.onrender.com'])
+ALLOWED_HOSTS = env.list('ALLOWED_HOSTS', default=['stis-backend.onrender.com', 'localhost', '127.0.0.1'])
 
 # ---------------------------------------------
 # Application definition
